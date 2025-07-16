@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Portfolio - Jadhav Rani</title>
+  <link rel="stylesheet" href="style.css" />
+  <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+</head>
+<body>
+
+  <!-- Header -->
+  <header class="navbar">
+    <div class="logo">Jadhav Rani</div>
+    <nav class="nav-links" id="navLinks">
+      <a href="#">Home</a>
+      <a href="#frontend">Frontend</a>
+      <a href="#portfolio">Project</a>
+      <a href="#contact">Contact</a>
+    </nav>
+    <div class="menu-icon" onclick="toggleMenu()">&#9776;</div>
+  </header>
+
+  <!-- Home Section -->
+  <section class="main-section reveal">
+    <div class="image-side">
+      <img src="model.jpg" alt="portfolio" />
+    </div>
+    <div class="text-side">
+      <h1><span>My</span><br />Portfolio</h1>
+      <p>Turning code into captivating user experiences</p>
+    </div>
+  </section>
+
+  <!-- Frontend Section -->
+  <section class="frontend-section reveal" id="frontend">
+    <div class="frontend-text">
+      <h2><span># aspiring developer</span></h2>
+      <h1>Frontend <span class="highlight">Developer</span></h1>
+      <p>New generation interface loving frontend enthusiast.</p>
+      <div class="tech-stack">
+        <div class="tech reveal">HTML</div>
+        <div class="tech reveal">CSS</div>
+        <div class="tech reveal">JavaScript</div>
+        <div class="tech reveal">React</div>
+      </div>
+      <div class="buttons">
+        <a href="#portfolio" class="btn">Projects 🔧</a>
+        <a href="#contact" class="btn dark">Contact 💬</a>
+      </div>
+    </div>
+    <div class="frontend-image">
+      <img src="frontend.jpg" alt="Frontend Illustration" />
+    </div>
+  </section>
+
+  <!-- Portfolio Section -->
+  <section class="portfolio-showcase reveal" id="portfolio">
+    <h2 class="section-title">Portfolio Showcase</h2>
+    <p class="section-subtitle">Explore my client project and internship experience.</p>
+
+    <div class="tabs">
+      <button class="tab-btn active" data-tab="projects">Project</button>
+      <button class="tab-btn" data-tab="internships">Internship</button>
+    </div>
+
+    <div class="tab-content active" id="projects">
+      <div class="card-grid">
+        <div class="card reveal">
+          <img src="project.png" alt="Flower Shop" class="project">
+          <h3>Flower Shop Website</h3>
+          <p>Client-based responsive flower shop website.</p>
+          <a href="https://github.com/Jadhavrani1208/flower_shop_website" target="_blank">View on GitHub</a>
+        </div>
+      </div>
+    </div>
+
+    <div class="tab-content" id="internships">
+      <div class="card-grid">
+        <div class="card reveal">
+          <img src="images/calculator.png" alt="Calculator">
+          <h3>Calculator (C++)</h3>
+          <p>Simple calculator project using C++.</p>
+          <a href="https://github.com/Jadhavrani1208/arithmetic-calculator" target="_blank">View on GitHub</a>
+        </div>
+        <div class="card reveal">
+          <img src="images/guess-game.png" alt="Guessing Game">
+          <h3>Number Guessing Game (C++)</h3>
+          <p>A number guessing game developed as an internship task.</p>
+          <a href="https://github.com/Jadhavrani1208/guessing-number-game" target="_blank">View on GitHub</a>
+        </div>
+   <div class="card reveal">
+          <img src="images/guess-game.png" alt="to-do-list">
+          <h3>to-do-list (C++)</h3>
+          <p>A to-do-list developed as an internship task.</p>
+          <a href="https://github.com/Jadhavrani1208/to_do-list-using-cpp" target="_blank">View on GitHub</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact Section -->
+  <section id="contact" class="contact-section reveal">
+    <div class="contact-container">
+      <h2>Contact <span>Me</span></h2>
+      <p>Get in touch by message or connect on social media.</p>
+
+      <div class="contact-content">
+        <div class="contact-form">
+          <h3>Get in Touch</h3>
+          <form>
+            <input type="text" placeholder="Your Name" required>
+            <input type="email" placeholder="Your Email" required>
+            <textarea rows="5" placeholder="Your Message" required></textarea>
+            <button type="submit" class="send-btn">Send Message</button>
+          </form>
+
+          <div class="social-links">
+            <a href="mailto:your.email@gmail.com" target="_blank"><i class="fas fa-envelope"></i> Gmail</a>
+            <a href="https://instagram.com/yourusername" target="_blank"><i class="fab fa-instagram"></i> Instagram</a>
+            <a href="https://linkedin.com/in/yourusername" target="_blank"><i class="fab fa-linkedin"></i> LinkedIn</a>
+          </div>
+        </div>
+
+        <div class="contact-comments">
+          <h3>Comments</h3>
+          <form>
+            <input type="text" placeholder="Your Name">
+            <textarea placeholder="Write your message here..."></textarea>
+            <input type="file">
+            <button type="submit" class="comment-btn">Post Comment</button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Scripts -->
+  <script src="scrpt.js"></script>
+</body>
+</html>
